@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Inter.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Interaktionsudvikling</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Interaktionsdesign</h2></div>
+    </section>
+
+    <div class="Content">
+        <section class="Holder">
+
+            <div class="Returnbutton">
+                <a class="Return" href="Inter.html" aria-label="Settings">
+                    <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="Overskrift">
+                <h2 class="over">Kapitle 11 - Tekst styling</h2>
+            </div>
+
+            <p>
+                <div class="Bigover">Kapitel 11 - Text styles </div>
+                Sammen med en klassekammerat skulle vi tage et kapitle fra bogen; Pro HTML5 Whit CSS, JavaScript, and Multimedia, og beskrive hvad den form for css gik ud på.<br /><br />
+
+                <div class="Smallover">Hvordan finder man dem?</div>
+                Man kan enten bruge hjemmesider der har webfonts til at ligge på en server, og bruge deres fonts, disse fonts er web-safe fonts. Man kan også downloade fonts, og ligge dem ind blandt filerne i ens hjemmeside,
+                disse fonts er ikke set som websikre, da der ikke vil være noget til at replace din font, hvis der sker noget med dine filer.<br />
+                Det er vigtigt at man ikke bruger for mange forskellige fonte på en hjemmeside, da det hurtigt kan komme til at blive for meget.<br /><br />
+
+                <div class="Smallover">Font families</div>
+                Der er 5 former for families man kan style sin tekst med i CSS;
+                <pre>
+.Text {
+    font-family: cursive;
+    font-family: decorative;
+    font-family: monospace;
+    font-family: sans-serif;
+    font-family: serif;
+}
+
+</pre>
+                <div class="Smallover">Hvordan får man en websafe font ind i sin hjemmeside?</div>
+                Der er to ting man skal gøre, i sit html dokument skal man i sin head ligge et link til fonten, og i sin CSS skal man ligge selve font familien i den selector man vil style med.<br />
+                Det vil se sådan ud i ens HTML;
+                <pre>
+
+link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet"
+</pre>              og sådan her ud i din CSS:
+                <pre>
+
+.Selector {
+font-family: 'Berkshire Swash';
+}
+</pre>
+                Denne font er den der er blever brugt til overskrifterne på denne hjemmeside.<br /> For at være sikker på at ens font ikke vil blive den normale font en side har, kan man
+                lave flere backups til en selector ved at bruge flere 'fonts' og dele dem op med et komma.
+                <pre>
+
+P {
+Font-family: 'Berkshire Swash', verdana, sans-serif;
+}
+
+</pre>
+                <div class="Smallover">Size</div>
+                Der findes 5 variabler til at beskrive størrelsen af ens font på;<br />
+                <table>
+                    <tr><td>PX</td><td>Pixel højde</td></tr>
+                    <tr><td>xx-small to xx-big</td></tr>
+                    <tr><td>EM</td><td>Din nuværende font size</td></tr>
+                    <tr><td>REM</td><td>Størrelsen ændre sig efter hvordan root elementet er</td></tr>
+                    <tr><td>VH</td><td>Her bliver fonten udregnet efter viewportens højde</td></tr>
+                </table>
+
+                <br />
+
+                <div class="Smallover">Weight</div>
+                Man kan også bestemme hvor tykke ens bogstaver skal være, ved brug af weight, man kan både skrive vægten som for eksemple bold, thin eller heavy eller man kan bruge tal;
+                <pre>
+.Selector {
+Font-weight: bold;
+eller
+Font-weight: 700;
+}
+</pre>
+                Her er der en oversigt over hvordan tal og tekst values hænger sammen;
+                <table>
+                    <tr><td class="thin">Thin - 100</td></tr>
+                    <tr><td class="Light">Light - 200</td></tr>
+                    <tr><td class="book">Book - 300</td></tr>
+                    <tr><td class="Regular">Regular - 400</td></tr>
+                    <tr><td class="Medium">Medium - 500</td></tr>
+                    <tr><td class="Demibold">Demibold - 600</td></tr>
+                    <tr><td class="Bold">Bold - 700</td></tr>
+                    <tr><td class="Extrabold">Extrabold - 800</td></tr>
+                    <tr><td class="heavy">Heavy - 900</td></tr>
+                </table>
+                <br />
+
+                <div class="Smallover">Color</div>
+                Hvis man vil bestemme farven på ens text, kan det gøres ved en hex kode i RGB eller HSLA;
+                <pre>
+.Text {
+color: red;
+eller 
+color: #ff0000;
+}
+</pre>
+                Her sætter vi farven til at være rød. Man kan også sætte en opacity på der går fra 0 - 1, der bestemmer hvor synlig teksten er.<br />
+                <br />
+
+                <div class="Smallover">Text formatting</div>
+                Her kan man blandt andent bestemme hvor texten er i forhold til siden, og hvordan det vises.
+                Allign; right, center, left og justify  flytter teksten herefter. <br />
+                Hvis en tekst går ud over den plads den er givet, kan man sætte overflow på, det betyder man kan gøre at den tekst der 
+                går ud over pladsen forsvinder. Man kan tilføje herefter en ellipsis <em>en læs mere knap</em>.<br /><br />
+ 
+                <div class="Smallover">Capitalization</div>
+                Her kan man sætte tekstens bogtaver til at være store eller små;<br /><br />
+                None: Her ser teksten sådan ud.<br />
+                Capitalize: Her Er Hvert Ord Med Store Bogstaver.<br />
+                Uppercase: ALT HER ER MED STORT.<br />
+                Lowercase; alt her er med lille.<br /><br />
+
+                <div class="Smallover">Spacing</div>
+                Der er 3 forskellige former for spacing, Letterspacing, wordspacing og lineheight.<br />
+                Letter spacing bestemmer hvor meget plads der er mellem hver bogstav.
+                Wordspacing er mellem hvert ord, og lineheight bestemmer hvor meget plads der er fra grundlinjen af bogstaverne på en linje, til bogstaverne på linjen over dem.<br /><br />
+
+                <div class="Smallover">Cursor</div>
+                Man kan bestemme hvordan musen skal se ud, på ens hjemmeside eller når man for eksemple bruger en :hover option over ens elementer.
+                Et eksemple på dette er, når du hover din mus over min menu bar, bliver din cursor til en pointer i stedet for den normale mus.
+            </p>
+            <hr />
+            <p>
+                <div class="Smallover">Kilder;</div>
+                Kapitle 11: Text styles: Collins, Mark J., <em>Pro HTML5 Whit CSS, JavaScript, and Multimedia.</em>
+            </p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/close_menu.js"></script>
+
+</body>
+</html>

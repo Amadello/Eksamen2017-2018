@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Inter.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Interaktionsudvikling</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Interaktionsdesign</h2></div>
+    </section>
+
+    <div class="Content">
+        <section class="Holder">
+            <div id="Frame">
+
+                <div class="Returnbutton">
+                    <a class="Return" href="Inter.html" aria-label="Settings">
+                        <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="Overskrift">
+                    <h1 class="over">Frameworks</h1>
+                </div>
+
+                <div class="Text-size-small">
+                    <div class="Screen-size-small">
+                        <!-- https://www.pexels.com/photo/black-and-white-building-construction-industry-53176/ -->
+                        <img src="Images/Framework.jpeg" class="BillederFrame" title="Fra pexel.com" />
+                    </div>
+
+                    <p>
+                        <div class="Smallover">Hvad er det?</div>
+                        Frameworks er en sammensætning af kodeelemter, der er lavet af open source programmer som bootstrap, Foundation Boilerplate mm.
+                        Med anvendelse af disse kodeelementer kan man nemt opsætte et layout, der er nemt struktureret, effektiv at bruge, og har masser af funktioner man kan udnytte.<br /><br />
+
+                        Frameworks indholder typisk;
+                        <br />
+                        HTML: i form af templates og snippets.
+                        <br />
+                        CSS: i form af en css fil der undersøtter "alt".
+                        <br />
+                        Javascrpit: i form af en stor samling af funktioner der anvendes af snippets.
+
+                        <br />
+                        <br />
+                        <em>Der er to metoder til at anvende disse open source filer i din hjemmeside, lokal og hostet.</em>
+                        <br />
+                        <br />
+
+                        <div class="Smallover">Lokal</div>
+                        Ved en lokal installation i dine egne filer, skal man downloade en version af filerne, fra deres hjemmeside, og derfra integrere disse filer i din egen hjemmeside.
+                        På denne måde har du styr på de versioner du bruger, af det open source du bruger, og du kan selv tilpasse versionerne, da de ligger i dine filer.
+                        Du kan teste om hjemmesiden, virker uden internet forbindelse, da filerne ikke skal hentes gennem en internetforbindelse, til det open source hjemmeside du har valgt at bruge.
+                        <br />
+                        <br />
+                        <div class="Smallover">Hostet</div>
+                        Gennem en Hostet forbindelse, skal man ikke have alle filerne, fra open source programmet i sine egne filer, men man kan linke sit projekt til nogle filer der ligger på en server.
+                        En ulempe ved at bruge Hostet links, er at man er afhænig af at disse filer er oppe og køre, og at deres load hastighed ikke er dårlig, da det kommer til at gå ud over din hastighed.
+                        Der er også en mulighed for at brugeren, ikke kan få forbindelse til den server der er linket til, eller der går noget galt i linket.
+                        Man kan heller ikke vide sig sikker i om de filer man linker til kan være hacket, og du overgiver noget af din kontrol til en 3. part.
+
+                        <br />
+                        <br />
+
+                        I forbindelsen med brug af disse frameworks, høre der også en negativ side til.
+                        <br />
+                        Ved brugen af de downloaded elementer der skal ind i ens kode, kommer der også til at ligge mange elemter i ens kode, som man slet ikke får brug for.
+                        Blandt andet kommer ens CSS og Javascript filer, til at være meget størrer end nødvendigt, og hvis man vil undgå dette, skal man selv ind og slette i de filer man henter.
+                        Dette fører til at man skal bruge endnu mere tid til, at sætte sig ind i det open source, man har valgt at bruge.
+                        <br />
+                        <br />
+
+                        <div class="Smallover">Fordele og ulemper</div>
+                        Der kan defor opsættes fordele, og ulemper ved brugen, af en open source programmer.
+                        <br />
+                        <br />
+                        <em>Fordele:</em>
+                        <br />
+                        Brugen af open source som bootstrap, som er brugt til denne hjemmeside, gør det nemmer og hurtigere, at opbygge en hjemmeside.
+                        Det gør hjemmesiden nem og brugervenlig, uden alt for meget arbejde, samt giver dig et hav af funktioner, der er nemme at bruge.
+                        <br />
+                        <br />
+
+                        <em>Ulemper:</em>
+                        <br />
+                        Det kan blive problematisk, at skabe et unikt design til sin hjemmeside, da bootstrap har sine standard css.
+                        Man skal sætte sig ind i mange forskellige funktioner, der kun tilhøre de open source filer man vælger at bruge.
+                        Ved at hente og bruge de mange funktioner man henter, skal man også bruge en del tid på at sætte sig ind i hvordan de virker.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/close_menu.js"></script>
+
+</body>
+</html>

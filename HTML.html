@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Inter.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Interaktionsudvikling</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Interaktionsdesign</h2></div>
+    </section>
+
+    <div class="Content">
+        <section class="Holder">
+            <div id="MindmapHTML">
+
+                <div class="Returnbutton">
+                    <a class="Return" href="Inter.html" aria-label="Settings">
+                        <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="Overskrift">
+                    <h1 class="over">Html ~ Et Mind map</h1>
+                </div>
+
+                <p>
+                    <img src="Images/MindmapHtml.jpg" class="Billeder" />
+
+                    Internettet er en forbindelse, en fysisk infrastruktur.<br />
+                    <em>Webbet er der hvor informationen ligger.</em><br />
+
+                    <div class="Smallover">Hvad er HTML?</div>
+                    Hypertext er noget der forbindes på flere forskellige måder.<br />
+                    For eksempel hvad er en hest? er det:<br /><br />
+                    Dyret<br />
+                    En skakbrik<br />
+                    Et gymnastikredskab<br /><br />
+                    Internettet er fuld af disse sammenhæng mellem data.<br />
+                    Skabelsen af "see more" options, man finder når man søger på noget, og kan få information om noget tilsvarende eller noget i samme kategori, kommer fra dette.<br /><br />
+
+                    <div class="Smallover">Hvem?</div>
+                    Tim Berners Lee, lavede The first "Common" sporg computeren havde, nemlig HTML;<br />
+                    <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage<br /><br />
+
+                    Det han lavede var frit for alle, og kostede ikke noget, fordi han ønskede at alle kunne komme på nettet, og at folk skulle begynde at bruge det, samt skrive kode selv.
+                    <br />
+                    Han blev slået til ridder i England, og hyldet meget for sine bedrifter.
+                </p>
+                <hr />
+                <p>
+                    <div class="Smallover">Men hvad er html i kodning?</div>
+                    Når man skriver en hjemmeside i html, opstiller man en hjemmeside med nogle grundlæggende tags.<br /><br />
+                    Man skriver altid <xmp><!DOCTYPE html>
+</xmp> når man starter ud med en hjemmeside, for at angive hvilket sprog hjemmesiden bliver skrevet i.<br /><br />
+                   
+                    Defter er der HTML tagget <xmp><html></html></xmp>dette er her alt data på hjemmesiden ligger i.<br /><br />
+                    Efter dette har man to tags, en <xmp><head></head></xmp> og <xmp><body></body></xmp> <br />
+
+                    <div class="Smallover">Head</div>
+                    I head ligger man information som titlen på hjemmesiden i et <xmp><title></title></xmp> tag, og man angiver hvilket sprog hjemmesiden
+                    er blevet kodet i med et meta tag <xmp><meta charset="utf-8" /></xmp> man ligger også links ind til ens CSS, og hvis man f.eks. har brugt
+                    fonts eller open source programmer her.
+                    Alt hvad der ligger i ens header vil ikke blive vist på hjemmesiden, men vil stadig være aktiv.<br /><br />
+                    
+
+                    <div class="Smallover">Body</div>
+                    I body ligger alt ens basale kode, og her finder man ting som de semaniske tags, links til for eksemple billeder, andre sider af ens hjemmeside, andre hjemmesider mm. <br /><br />
+                    
+                    <em>Semantiske tags</em><br />
+                    Siden tidsperioden for internettes historie; Den semantiske søgning, har semaniske tags været en stor del af hjemmesider. Dissa tags
+                    er med til at søgeoptimere hjemmesiden, så netop din hjemmeside vil være en af de første resultater der vil komme frem, når man søger 
+                    efter noget bestemt, og det er på din side. <br /><br />
+                    Et semantisk tag kan f.eks. være;
+                    <xmp><section></section></xmp>
+                    <xmp><header></header></xmp>
+                    <xmp><nav></nav></xmp>
+                    <xmp><footer></footer></xmp>
+                    Disse tags bliver nemlig ranket af googles pagerank system.<br /><br />
+
+                    <div class="Smallover">Links og billeder</div><br />
+
+                    <em>Billeder</em><br />
+                    Når man ønsker at bruge et billede på ens hjemmeside, skal man bruge et img tag.<br />
+                    På denne side har jeg lagt et billede ind af et mind map jeg lavede over html, og tagget ser sådan her ud;
+                    <br /><br /><xmp><img src="Images/MindmapHtml.jpg"/></xmp><br />
+                    Img fortæller browseren at dette er et billede den skal indlæse, og src viser browseren hvor dette billede findes henne, en fil sti eller en hjemmeside mm. Man kan sætte et class eller id på til ens CSS, og man kan give den en alt tekst,
+                    der giver billedet en tekst, når man hover over billedet med sin mus. Alt er også et semantisk tag, og vil hjælpe på søgeoptimeringen.<br /><br />
+
+                    <em>Links</em><br />
+                    Det er næsten umuligt at have en størrer hjemmeside uden links, da disse tags er med til at skabe navigation og sammenhæng, mellem de forskellige elementer der findes på siden, både intern og ekstern.<br /><br />
+                    Et link til en anden side på denne hjemmeside, vil se sådan her ud;<br /><br />
+                    <xmp><a href="HistorienInternettet.html">HistorienInternettet</a></xmp><br />
+                    Her er a ligesom img, a fortæller browseren at dette er et link, href er ligesom src, og fortæller hvor filerne ligger.
+                </p>
+                </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/close_menu.js"></script>
+
+</body>
+</html>

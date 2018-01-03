@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Inter.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Interaktionsudvikling</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Interaktionsdesign</h2></div>
+    </section>
+
+    <div class="Content">
+
+        <section class="Holder">
+            <div id="Layout">
+
+                <div class="Returnbutton">
+                    <a class="Return" href="Inter.html" aria-label="Settings">
+                        <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="Overskrift">
+                    <h1 class="over">Layoutstrategier</h1>
+                </div>
+
+                <div class="Text-size-small">
+                    <div class="Screen-size-small">
+                        <!-- Disse billeder har jeg selv lavet i photoshop -->
+                        <img src="Images/Layourform01.png" class="BillederLayout" />
+                        <img src="Images/Layourform02.png" class="BillederLayout" />
+                        <img src="Images/Layoutform03.png" class="BillederLayout" />
+                        <img src="Images/Layoutform04.png" class="BillederLayout" />
+                    </div>
+
+                    <p>
+                        I dag findes der mange forskellige skærmstørrelser, og tanken om at have en hjemmeside der ikke er responsiv i dag er ikke venlig.
+                        <br />
+                        Designerne vil gerne have en hjemmeside som kan passe flere forskellige skærmstørrelser, uden at skulle skrive alt for meget kode ekstra.
+
+                        <br />
+                        <br />
+                        <div class="Bigover">Der er 4 overordnede tilgange:</div><br />
+
+                        <div class="Smallover">Statisk</div>
+                        Denne Layout metoder er baseret på faste mål, f.eks. har den en bestem vidde og højde, og vil ikke ændre sig selvom skærmstørrelsen ændre sig.
+                        Hvis skærmen er størrer end selve indholdet, vil hjemmesiden have luft i siderne, og hvis skærmen er mindre end hjemmesiden, vil den cutte noget af hjemmesiden af.
+                        På moblie enheder, samt tablets, bliver man derfor nød til at zoome ind og ud, på disse hjemmesider.
+                        Denne form for hjemmeside var meget normal i de første år af internettets historie.
+                        <br />
+                        <br />
+
+                        <div class="Smallover">Flydende</div>
+                        Ved brug af denne metode tilpasser elementerne sig til den givende bredde af hjemmesiden, bredden her er normalt angivet i procent.
+                        En negagtiv ting ved brug af denne layour form er, at ting på hjemmesiden kan virke til, at de passer perfekt i en vidde, men kommer til, at se andreledes ud i en anden skærmstørrelse.
+                        En tilknyting til dette er, at hvis indholdet bliver for stort, vil det komme til at gå ud over sin bredde, den har fået angivet.
+                        Denne metode ligger meget vægt på funktionalitet og indhold, i forhold til grafisk design.
+                        <br />
+                        <br />
+
+                        <div class="Smallover">Adaptiv</div>
+                        Denne metoder ændre på de regler der er opsat i css'en når andre skærmbredder kommer i spil.
+                        Det er blevet brugt på denne hjemmeside i form af;
+                        <pre>
+@media screen and (max-width: 500px) {}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {}
+
+@media screen and (min-width: 1000px) {}
+
+</pre>
+
+                        Dette er i dag den standard man normalt følger, og kræver at man kun ændre i ens css og ikke HTML filerne.
+                        Denne metoder er den mindst vanskelige metode at bruge.
+
+                        <br />
+                        <br />
+
+                        <div class="Smallover">Responsive</div>
+                        Denne layout metode styres af @mediaqueries, et eksemple på dette er;
+                        <pre>
+@media only screen and (max-width: 768px) {
+Her for mobil størrelsen, eller skærme der er under 768px bred, skal alle kolonner fylder 100%
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</pre>
+                        Hvis man dog ikke rammer det breakpoint der bliver sat ind, vil der komme for lidt eller for meget plads.
+
+                        <hr />
+
+                        <div class="Smallover">Scale</div>
+                        En vigtig ting man skal huske når man vil lave en responsiv hjemmeside er at huske meta tagget;<pre>
+
+meta name="viewport" content="width=device-width, initial-scale=1"
+</pre>
+                        Dette meta tag fortæller nemlig om hjemmesiden skal scalere dit indhold eller ej. Hvis dette meta tag ikke ligger i din header vil mediaqueries normalt ikke virke.
+
+                        <hr />
+
+                        <div class="Smallover">Mobile first</div>
+                        Denne metode bruges til at style din hjemmeside, med fokus på hvordan hjemmesiden kommer til at se ud på en mobil enhed først.
+                        Man starter ud med at designe mobil siden, fra tablet siden og til sidst hvordan den skal se ud på pc'en.
+                        Denne metoder er den mest fortrukne i dag, hvor vi gik fra Desktop first, pc'en, til Mobil first. 
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/close_menu.js"></script>
+
+</body>
+</html>

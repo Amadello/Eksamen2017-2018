@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/DV.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Design og Visualisering</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Design og Visualisering</h2></div>
+    </section>
+
+    <div class="Content">
+
+        <section class="Holder">
+            <div id="Indesign">
+
+                <div class="Returnbutton">
+                    <a class="Return" href="DV.html" aria-label="Settings">
+                        <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="Overskrift">
+                    <h1 class="over">Indesign</h1>
+                </div>
+
+                <p>
+                    <img src="Images/indes04.jpg" class="BillederIndesign" />
+
+                    InDesign er programmet der samler filerne til sidst, og sammensætter det hele inden man færdiggør sit projekt. Det bliver brugt til print for det meste, men kan også bruges til web. Dog er det ikke optimalt at bruge InDesign til at lave materialer til web design.
+                    <br />
+                    Her arbejder man med links, ved photoshop har man for eksempel et billede der ligger inde i programmet, hvor InDesign tager billederne fra forskellige steder, og henter dem ind i programmet den vej.
+                    <br />
+                    <br />
+                    <em>InDesign kan ikke redigere i billeder!</em>
+                    <br />
+                    <br />
+                    Hvis man vil sende et InDesign projekt til folk, skal man sørge for alt der er linket til i InDesign filen, bliver sendt med til modtageren.
+                    <br />
+                    <br />
+                    <div class="Smallover">Noter fra indesign;</div>
+                    Alt virker pixeleret i programmet, Shift + W  får det til at ligne printet.
+                    <br />
+                    Frame Tool - (f)
+                    <br />
+                    Bliver brugt til at sætte billeder ind med. Man kan drag droppe billeder direkte ind i programmet. Med Selection tool (v) kan man ændre i billedet.
+                    <br />
+                    Convert direction tool (shift + C)
+                    Giver billedet bezier handles, ses på billedet i den røde cirkel, så man kan trække buer i billedet, man aktivt arbejder med.
+                    <br />
+                    For at lave en shadow på begge siden af sit element, bruges inner glow, i stedet for dropshadow.
+
+                    <hr />
+                    <div class="Smallover">Eksport</div>
+                    PDF/X-4:2008 er en standard export PDF for adobe, og bliver generalt brugt.
+                    Hige quality kan bruges når det gemmes til en selv.
+
+                    <hr />
+
+                    <div class="Smallover">Opbygning af indesign siden</div><br />
+                    <img src="Images/BTLS.jpg" class="BillederFarve" />
+                    <em>Bleed</em><br />-bliver brugt til at sørger for, at der ikke kommer en hvid ramme "whitespace" når man printer.
+                    Man ligger sit design ud over linjerne, det bliver vist som kopieret, så der kan komme mere med, og at den der printer, kan se hvor han skal skære i billedet.
+                    <br /><br />
+                    <em>Live</em><br /> -det aktive canvas, der indeholder det der normalt bliver printet. Det er defineret som et "safe area" hvor alt der er inden i det, bliver med sikkerhed printet ud.
+                    <br /><br />
+                    <em>Trim</em><br /> -er der hvor der bliver skåret hos printeren og den der printer ud.
+                    <br /><br />
+                    <em>Slug</em><br /> -alt der ligger udenfor, ligger i området kaldet slug, alt der befinder sig her, kommer ikke med under print. Bleed ligger i slug området.
+                    <div class="clearfix"></div>
+                </p>
+                </div>
+        </section>
+    </div>
+
+    <script src="js/close_menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

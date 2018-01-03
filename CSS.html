@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheet Font awsome -->
+    <link href="Fawsome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- MINE styles sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Inter.css" rel="stylesheet" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!-- fonts - Open sans  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+
+    <!-- Scripts - jquery til bootstrap og js, til menubaren -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/close_menu.js"></script>
+
+    <!-- Titlen på siden -->
+    <title>Interaktionsudvikling</title>
+
+</head>
+<body>
+
+    <i class="toggle_menu">Menu</i>
+
+    <div class="sidebar_menu">
+        <i class="fa fa-times"></i>
+
+        <h1 class="boxed_item">Camilla <span class="logo_bold">Olesen</span></h1>
+        <h2 class="logo_title">Multimedie Designer</h2>
+
+
+        <ul class="navigation_section">
+            <li class="navigation_item" id="profile">
+                <a href="Index.html" class="Profile">Profile</a>
+            </li>
+
+            <li class="navigation_item" id="Inter">
+                <a href="Inter.html">Interaktionsudvikling</a>
+            </li>
+
+            <li class="navigation_item" id="Kommunikation">
+                <a href="DV.html">Design og Visualisering</a>
+            </li>
+
+            <li class="navigation_item" id="Kom">
+                <a href="Kom.html">Kommunikation</a>
+            </li>
+
+            <li class="navigation_item" id="Virk">
+                <a href="Virk.html">Virksomhed</a>
+            </li>
+
+            <li class="navigation_item" id="projekter">
+                <a href="Projekter.html">Projekter</a>
+            </li>
+        </ul>
+
+        <div class="HeaderFooter">
+            <div class="footer_text">Copyright &copy; 2017 - 2018 <br /> Camilla Olesen <br /> Multimedie Designer </div>
+        </div>
+    </div>
+
+    <!-- End of sidebar -->
+
+    <section class="HEADER">
+        <div class="HeaderOverskrift"><h2 class="Nav-underside">Interaktionsdesign</h2></div>
+    </section>
+
+    <div class="Content">
+        <section class="Holder">
+
+            <div class="Returnbutton">
+                <a class="Return" href="Inter.html" aria-label="Settings">
+                    <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="Overskrift">
+                <h2 class="over">Css</h2>
+            </div>
+            <p>
+                <img src="Images/CSS.png" class="Billeder" />
+
+                <div class="Bigover">Css = <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</div>
+                CSS er et sporg tilegnet til computeren, der beskriver hvordan en hjemmeside skal se ud. Det er en CSS fil man laver til et HTML, XHTML eller XML dokument, og man derfra linker sit CSS link til sit dokument.
+                Ved at bruge CSS kan man adskille den basiske fra stylingen, og skabe mere overblik.<br /><br />
+
+                <div class="Smallover">CSS - Lidt om historien</div>
+                Håkon Wium Lie udviklede den første version af Css, og det blev derfra adopteret af W3C, der overtog standardiseringsarbejdet så det kunne blive mere udbredt. Den første browser der understøttede CSS var IE3.
+                Gennem tiden har CSS standarden udviklet sig enormt meget, og det vil forsætte. I dag kan man ikke forstille sig nogle browser der ikke vil understøtte css.<br /><br />
+
+                <div class="Smallover">Hvor er det?</div>
+                Css linket er placeret i head tagget af dit HTML dokument, og vil kun tælle i det HTML dokument det ligger i, og ikke alle dine HTML filer i dit projekt.
+                Det kan med fordele ligges i flere HTML dokumenter, så der ikke skal laves flere forskellige CSS dokumenter.
+                Dette sikre at der vil nemt være en genkendelig udseende på alle de forskellige side, i dit website.<br /><br />
+
+                <div class="Smallover">Syntaks</div>
+                CSS syntaks - referere til regler der er knyttet til css'et og html'en.
+                Alle tags kan styles og alle tags har en bestemt type (p, h1, h2, body a:link)
+                <br />
+                En regl bruges i form af selectors i css, og nogle eksempler kan beskrives ved;<br /><br />
+
+                <table class="Table">
+                    <tr>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>.ClassName</td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td>#IDNAME</td>
+                    </tr>
+                    <tr>
+                        <td>Alt på siden</td>
+                        <td>*</td>
+                    </tr>
+                    <tr>
+                        <td>p tags</td>
+                        <td>p</td>
+                    </tr>
+                    <tr>
+                        <td>Flere elemnter</td>
+                        <td>#ID, .Class, p</td>
+                    </tr>
+
+                    <tr>
+                        <td>etc. target [attribute]</td>
+                        <td>[attribute name]</td>
+                    </tr>
+
+                    <tr>
+                        <td>:Der skal ske noget</td>
+                        <td>:hover</td>
+                    </tr>
+                </table>
+
+                <br />
+
+                På <a href="https://www.w3schools.com/cssref/css_selectors.asp" class="rout">w3schools</a> er der alle selectors.
+
+                <br />
+                <br />
+
+                <div class="Smallover">Declaration</div>
+                Når man vil give sin valgte selector nogle regler skal man declare hvad det skal være. En declaration starter altid ud med hvilken selector man vil bruge, og derefter en krølleparentes .eksemple {}.
+                Inde i denne parentes skriver man sine properties og sine values, der altid er adskildt af et kolon : så koden kan læse forskellen. Man afslutter sin property med et semikolon; så koden ved hvornår din property slutter.<br /><br />
+                Man kan for eksemple declare at text farven i sit p tag skal være rød på denne måde;
+                <pre>
+
+p {
+color: red;
+}                        </pre>
+                Color her er en property, og farven red er en value.
+
+                <pre>
+
+p {
+color: red;
+font-size: 16px;
+}                        </pre>
+                Her giver vi den endnu en property, font-size og endnu en value, 16px; der bestemmer hvor stor skriften skal være.
+            </p>
+            <hr />
+            <p>
+                <div class="Smallover">Kilder;</div>
+                Billede:https://www.pexels.com/photo/close-up-of-computer-keyboard-248515/<br />
+            </p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/close_menu.js"></script>
+
+</body>
+</html>
